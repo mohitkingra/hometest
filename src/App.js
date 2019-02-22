@@ -14,8 +14,6 @@ class App extends Component {
 	  <a
             className="App-link"
             href="#"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Member
           </a>
@@ -25,8 +23,6 @@ class App extends Component {
           <a
             className="App-link"
             href="#"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Sign out
           </a>

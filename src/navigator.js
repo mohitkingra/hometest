@@ -1,43 +1,50 @@
 import React, { Component } from 'react';
+import Agent from './agent.js';
 import './navigator.css';
 
 class Navigator extends Component {
+  
+  constructor(props) {
+   super(props); 
+   this.state = {
+     show : false
+   } 
+  }
+
+  onClick() {
+   this.setState({show: !this.state.show});
+
+  }
+
   render() {
 	return(
+	<div>
          <div className="nav">
 	   <a
             className="nav-link"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
            >
-            DASHBOARD
+            DASHBOARD  
            </a>
 	   <a
             className="nav-link"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
+	    href="#"
+	    onClick={this.onClick.bind(this)}
            >
             MY CRUISE
            </a>
 	   <a
             className="nav-link"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
            >
             AGENTS
            </a>
 	   <a
             className="nav-link"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
            >
             Help
            </a>
 	  </div>
+        {this.state.show && <Agent />}
+	</div>
 	);
   }
 }
