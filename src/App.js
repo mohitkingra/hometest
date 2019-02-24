@@ -9,17 +9,17 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <span>
-	    Signed in as  
-	  </span>
-	  <a
+	           Signed in as  
+	        </span>
+	        <a
             className="App-link"
             href="#"
-          >
+            >
             Member
           </a>
-	  <span>
-	   ->
-	  </span>
+	        <span>
+	           ->
+	        </span>
           <a
             className="App-link"
             href="#"
@@ -27,7 +27,7 @@ class App extends Component {
             Sign out
           </a>
         </header>
-	<Navigator />
+	      <Navigator />
         <footer className="App-footer">
           <p>
             Copyright Thoughtworks Inc.

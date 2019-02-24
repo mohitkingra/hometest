@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Resources from './resources.js';
 import './agent.css';
 
 import data from './data.json';
@@ -21,6 +22,7 @@ class Agent extends Component {
 	 		return(
 				<div className="agent-entry">
 					{entry.name + "|" + entry.state + "|" + entry.ip + "|" + entry.path}
+					<Resources />
 				</div>
 			);
 	  	})} 
