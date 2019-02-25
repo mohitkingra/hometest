@@ -28,7 +28,7 @@ class Agent extends Component {
 
 	this.state.building = i;
 	this.state.idle = j;
-	
+
 	this.getState = this.getState.bind(this);
 	
   }
@@ -53,7 +53,7 @@ class Agent extends Component {
 	 					<div className={entry.state === "building" ? "agent-insideb" : "agent-insidei"}>
 	 						<span className="dot"></span>
 							<div className="agent-entry">
-								{entry.name + "|" + entry.state + "|" + entry.ip + "|" + entry.path}
+								{entry.name + "	| " + entry.state + " | " + entry.ip + " | " + entry.path}
 								<Resources />
 							</div>	
 						</div>
