@@ -8,30 +8,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <span>
-	           Signed in as  
-	        </span>
-	        <a
-            className="App-link"
-            href="#"
-            >
-            Member
-          </a>
-	        <span>
-	           ->
-	        </span>
-          <a
-            className="App-link"
-            href="#"
-          >
-            Sign out
-          </a>
+          <span>Signed in as</span>
+	        <a className="App-link" href="#">Member</a>
+	        <span>-></span>
+          <a className="App-link" href="#">Sign out</a>
         </header>
 	      <Navigator />
         <footer className="App-footer">
-          <p>
-            Copyright Thoughtworks Inc.
-          </p>
+          <p>Copyright Thoughtworks Inc.</p>
         </footer>
       </div>
     );

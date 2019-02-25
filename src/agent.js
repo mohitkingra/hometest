@@ -17,16 +17,21 @@ class Agent extends Component {
   render() {
 
 	return(
-	 <div className="agent">
-         	{this.state.entries.map(function(entry) {
-	 		return(
-				<div className="agent-entry">
-					{entry.name + "|" + entry.state + "|" + entry.ip + "|" + entry.path}
-					<Resources />
-				</div>
-			);
-	  	})} 
-	 </div>
+		<div className="agent-top">
+	 		<div className="agent-content">
+         		{this.state.entries.map(function(entry) {
+	 				return(
+						<div className="agent-entry">
+							{entry.name + "|" + entry.state + "|" + entry.ip + "|" + entry.path}
+							<Resources />
+						</div>			
+					);
+	  			})} 
+	 		</div>
+	 		<div className="agent-summary">
+	 			Summary
+	 		</div>
+		</div>
 	);
   }
 }

@@ -65,20 +65,18 @@ class Resources extends Component {
     }
 
 	return(
-	<div>
-	 <div>
-         <a href="#" onClick={this.linkClicked.bind(this)}>
-         	Specify Resources 
-         </a>
-        <form onSubmit={this.addResource.bind(this)} style={this.state.click? styles.clicked : styles.notclicked}>
-			<input type="text" ref="addresource" />
-			<input type="submit" />
-		</form>
+	 <div className="resources">
+	   <div>
+         <a href="#" onClick={this.linkClicked.bind(this)}>Specify Resources </a>
+         <form onSubmit={this.addResource.bind(this)} style={this.state.click? styles.clicked : styles.notclicked}>
+			     <input type="text" ref="addresource" />
+			     <input type="submit" />
+		     </form>
+	   </div>
+	   <div>
+	 	   Resources : {Resources}
+	   </div>
 	 </div>
-	 <div>
-	 	Resources : {Resources}
-	 </div>
-	</div>
 	);
   }
 }

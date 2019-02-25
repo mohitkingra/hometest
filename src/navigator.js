@@ -18,33 +18,15 @@ class Navigator extends Component {
 
   render() {
 	return(
-	<div>
-         <div className="nav">
-	   <a
-            className="nav-link"
-           >
-            DASHBOARD  
-           </a>
-	   <a
-            className="nav-link"
-	    href="#"
-	    onClick={this.onClick.bind(this)}
-           >
-            MY CRUISE
-           </a>
-	   <a
-            className="nav-link"
-           >
-            AGENTS
-           </a>
-	   <a
-            className="nav-link"
-           >
-            Help
-           </a>
-	  </div>
-        {this.state.show && <Agent />}
-	</div>
+	    <div>
+        <div className="nav">
+          <div className="rcorner"><a className="nav-link">DASHBOARD</a></div>
+	        <div className="rcorner"><a className="nav-link" href="#" onClick={this.onClick.bind(this)}>MY CRUISE</a></div>
+	        <div className="rcorner"><a className="nav-link">AGENTS</a></div>
+	        <div className="rcorner"><a className="nav-link">Help</a></div>
+	     </div>
+       {this.state.show && <Agent />}
+	    </div>
 	);
   }
 }
