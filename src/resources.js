@@ -57,9 +57,9 @@ class Resources extends Component {
   		Resources = this.state.resources.map((resource, index) => {
   			return(
   				<div>
-            {resource}
-            <span className="close" onClick={this.deleteResource.bind(this)} ref={el => this.element = el}>x</span>
-  			  </div>
+            		{resource}
+            		<span className="close" onClick={this.deleteResource.bind(this)} ref={el => this.element = el}>x</span>
+  			  	</div>
         );
   		})
     }
@@ -67,13 +67,14 @@ class Resources extends Component {
 	return(
 	 <div className="resources">
 	   <div>
-         <a href="#" onClick={this.linkClicked.bind(this)}>Specify Resources </a>
+         +<a href="#" className="resources-link" onClick={this.linkClicked.bind(this)}> Specify Resources </a>
          <form onSubmit={this.addResource.bind(this)} style={this.state.click? styles.clicked : styles.notclicked}>
 			     <input type="text" ref="addresource" />
 			     <input type="submit" />
 		     </form>
 	   </div>
-	   <div>
+	   <span> | </span>
+	   <div className="resources-list">
 	 	   Resources : {Resources}
 	   </div>
 	 </div>
