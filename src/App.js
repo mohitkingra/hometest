@@ -9,9 +9,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <span>Signed in as</span>
-	        <a className="App-link" href="#">Member</a>
-	        <span>-></span>
-          <a className="App-link" href="#">Sign out</a>
+	        <a className="App-link1" href="#">Member</a>          
+          <a className="App-link2" href="#">Sign out</a>
         </header>
 	      <Navigator />
         <footer className="App-footer">

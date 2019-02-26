@@ -26,7 +26,7 @@ class Navigator extends Component {
 	        <a className="nav-link">Help</a>
 	      </div>
         <div className={this.state.show ? "highlight" : "highlight-selected"}>
-          Agents
+          <div className="lagent">Agents</div>
           <div className="rcorner">All</div>
           <div className={!this.state.show ? "rcorner" : "rcorner-selected"}>Physical</div>
           <div className="rcorner">Virtual</div>

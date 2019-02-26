@@ -24,7 +24,17 @@
   bottom: 0;
 }
 
-.App-link {
+.App-link1 {
   color: black;
+  margin-left: 1%;
 }
 
+.App-link2 {
+  color: black;
+  margin-left: 1%;
+} 
+
+.App-link2::before{
+    content: "->";
+    display:inline-block;
+}

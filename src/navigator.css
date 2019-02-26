@@ -16,6 +16,7 @@
   color: black;
   margin-right: 2px;
   border: 1px solid black;
+  padding: 4px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -24,6 +25,7 @@
   background-color : dimgrey;
   margin-right: 2px;
   border: 1px solid black;
+  padding: 4px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -40,15 +42,26 @@
 }
 
 .rcorner {
+  font-size: 10px;
+  font-weight: bold;
   border: 1px solid black;
+  padding: 3px;
   border-radius: 18px;
-  margin : 8px;
+  margin : 1%;
 }
 
 .rcorner-selected {
+  font-size: 10px;
+  font-weight: bold;
   border: 1px solid black;
+  padding : 3px;
   border-radius: 18px;
-  margin : 8px;
+  margin : 1%;
   background-color:white;
 }
 
+.lagent {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 1%;
+}

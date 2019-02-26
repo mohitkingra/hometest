@@ -53,7 +53,7 @@ class Agent extends Component {
 	 					<div key={index} className={entry.state === "building" ? "agent-insideb" : "agent-insidei"}>
 	 						<span className="dot"></span>
 							<div className="agent-entry">
-								{entry.name + "	| " + entry.state + " | " + entry.ip + " | " + entry.path}
+								<strong>{entry.name + "	| " + entry.state + " | " + entry.ip + " | " + entry.path}</strong>
 								<Resources />
 							</div>	
 						</div>
@@ -61,15 +61,14 @@ class Agent extends Component {
 	  			})} 
 	 		</div>
 	 		<div className="agent-summary">
-	 			Summary 
+	 			<strong>Summary</strong> 
 	 			<div className="line"></div>
 	 			<div>
-	 				building : {this.getState("building")}
-	 				<br/>
+	 				building : {this.getState("building")}<br/>
 	 				idle : {this.getState("idle")}
 	 			</div>
-	 			<div className="line"></div>
-	 			History
+	 			<br/>
+	 			<strong>History</strong>
 	 			<div className="line"></div>
 	 		</div>
 		</div>
