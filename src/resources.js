@@ -38,14 +38,13 @@ class Resources extends Component {
     });
   }
 
-  deleteResource() {
-    const ele = this.element.parentElement;
-    ele.style.display = "none";
-
+  deleteResource(event) {
+    const ele = event.currentTarget.parentNode;
     const delresource = ele.innerText.substring(0, ele.innerText.length - 1);
 
     let rsc = this.state.resources;
     rsc = rsc.filter(resource => resource !== delresource);
+
     this.setState({
       resources: rsc
     });
@@ -62,7 +61,6 @@ class Resources extends Component {
             <span
               className="close"
               onClick={this.deleteResource.bind(this)}
-              ref={el => (this.element = el)}
             >
               x
             </span>
