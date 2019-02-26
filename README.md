@@ -9,7 +9,8 @@ Steps to Run :
 Design : 
 1. It's based on declarative component based design with reference to React.
 2. It includes React Components at App, Navigation, Agent and Resources level.
-3. Initial JSON Data is read from data.json to initialize Agent State.
+3. Resource/s of an Agent is added using Comma separated strings using onClick Handler and Deleted Individually using Close Button. 
+4. Initial JSON Data is read from data.json to initialize Agent State.
 
 Assumptions
 1. Resources data for Agent is not stored in database. (Available only for Session Duration)
