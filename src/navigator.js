@@ -22,7 +22,7 @@ class Navigator extends Component {
           <a className="nav-link">MY CRUISE</a>
           <a
             className={!this.state.show ? "nav-link" : "navv-link"}
-            href="#"
+            href="javascript:void(0)"
             onClick={this.onClick.bind(this)}
           >
             AGENTS

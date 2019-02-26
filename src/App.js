@@ -9,10 +9,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <span>Signed in as</span>
-          <a className="App-link1" href="#">
+          <a className="App-link1" href="javascript:void(0)">
             Member
           </a>
-          <a className="App-link2" href="#">
+          <a className="App-link2" href="javascript:void(0)">
             Sign out
           </a>
         </header>

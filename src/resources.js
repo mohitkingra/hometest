@@ -25,7 +25,8 @@ class Resources extends Component {
     });
   }
 
-  addResource() {
+  addResource(event) {
+    event.preventDefault();
     let rsc = this.state.resources;
 
     this.refs.addresource.value.split(",").forEach(function(resource) {
@@ -38,10 +39,10 @@ class Resources extends Component {
   }
 
   deleteResource() {
-    const el = this.element.parentElement;
-    el.style.display = "none";
+    const ele = this.element.parentElement;
+    ele.style.display = "none";
 
-    const delresource = el.innerText.substring(0, el.innerText.length - 1);
+    const delresource = ele.innerText.substring(0, ele.innerText.length - 1);
 
     let rsc = this.state.resources;
     rsc = rsc.filter(resource => resource !== delresource);
@@ -75,12 +76,11 @@ class Resources extends Component {
         <div>
           +
           <a
-            href="#"
+            href="javascript:void(0)"
             className="resources-link"
             onClick={this.linkClicked.bind(this)}
           >
-            {" "}
-            Specify Resources{" "}
+            Specify Resources
           </a>
           <form
             onSubmit={this.addResource.bind(this)}

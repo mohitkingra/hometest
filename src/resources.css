@@ -27,6 +27,6 @@
 	border: 1px solid black;
 }
 
-.close : hover {
+.close:hover {
 	background: grey;
 }
