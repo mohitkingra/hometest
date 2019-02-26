@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Navigator from './navigator.js';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Navigator from "./navigator.js";
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -9,10 +9,14 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <span>Signed in as</span>
-	        <a className="App-link1" href="#">Member</a>          
-          <a className="App-link2" href="#">Sign out</a>
+          <a className="App-link1" href="#">
+            Member
+          </a>
+          <a className="App-link2" href="#">
+            Sign out
+          </a>
         </header>
-	      <Navigator />
+        <Navigator />
         <footer className="App-footer">
           <p>Copyright Thoughtworks Inc.</p>
         </footer>
