@@ -19,7 +19,9 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: left;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
 }
 
 .App-link {

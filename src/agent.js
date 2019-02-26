@@ -47,10 +47,10 @@ class Agent extends Component {
 	return(
 		<div className="agent-top">
 	 		<div className="agent-content">
-         		{this.state.entries.map(function(entry) {
+         		{this.state.entries.map(function(entry, index) {
 
 	 				return(
-	 					<div className={entry.state === "building" ? "agent-insideb" : "agent-insidei"}>
+	 					<div key={index} className={entry.state === "building" ? "agent-insideb" : "agent-insidei"}>
 	 						<span className="dot"></span>
 							<div className="agent-entry">
 								{entry.name + "	| " + entry.state + " | " + entry.ip + " | " + entry.path}
@@ -62,15 +62,15 @@ class Agent extends Component {
 	 		</div>
 	 		<div className="agent-summary">
 	 			Summary 
-	 			<div class="line"></div>
+	 			<div className="line"></div>
 	 			<div>
 	 				building : {this.getState("building")}
 	 				<br/>
 	 				idle : {this.getState("idle")}
 	 			</div>
-	 			<div class="line"></div>
+	 			<div className="line"></div>
 	 			History
-	 			<div class="line"></div>
+	 			<div className="line"></div>
 	 		</div>
 		</div>
 	);

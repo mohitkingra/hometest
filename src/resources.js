@@ -28,8 +28,12 @@ class Resources extends Component {
 
   addResource() {
   	let rsc = this.state.resources;
-  	rsc = rsc.concat(this.refs.addresource.value);
-  	this.setState({
+
+    this.refs.addresource.value.split(",").forEach(function(resource){
+      rsc = rsc.concat(resource);
+    })
+  	
+    this.setState({
   		resources : rsc
   	});
 
@@ -56,7 +60,7 @@ class Resources extends Component {
   	if(this.state.resources.length > 0){
   		Resources = this.state.resources.map((resource, index) => {
   			return(
-  				<div className="resources-list-space">
+  				<div key={index} className="resources-list-space">
             		{resource}
             		<span className="close" onClick={this.deleteResource.bind(this)} ref={el => this.element = el}>x</span>
   			  	</div>

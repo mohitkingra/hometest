@@ -21,18 +21,22 @@
 }
 .navv-link {
   color: black;
-  background-color : grey;
+  background-color : dimgrey;
   margin-right: 2px;
   border: 1px solid black;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+.highlight-selected {
+  display: none;
+}
+
 .highlight {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  background-color : grey;
+  background-color : dimgrey;
 }
 
 .rcorner {
