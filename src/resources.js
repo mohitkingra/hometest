@@ -56,11 +56,11 @@ class Resources extends Component {
   	if(this.state.resources.length > 0){
   		Resources = this.state.resources.map((resource, index) => {
   			return(
-  				<div>
+  				<div className="resources-list-space">
             		{resource}
             		<span className="close" onClick={this.deleteResource.bind(this)} ref={el => this.element = el}>x</span>
   			  	</div>
-        );
+        	);
   		})
     }
 
@@ -75,7 +75,7 @@ class Resources extends Component {
 	   </div>
 	   <span> | </span>
 	   <div className="resources-list">
-	 	   Resources : {Resources}
+	 	   Resources: {Resources}
 	   </div>
 	 </div>
 	);
